@@ -1,12 +1,10 @@
 .features {
-  background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
 }
 .features-list__item {
   list-style: none;
 }
 .section__title {
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -16,19 +14,50 @@
 }
 .section__p {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 23px;
   width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7142;
 }
-.features-list {
-  margin: 40px auto;
-  &__p{
-    margin: 13px auto 24px;
-    width: 100%;
+.features__picture {
+  margin: 0 20px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    transform: translateX(-36px);
+    float: left;
   }
 }
+.features-list {
+  margin: 21px auto;
+  &__p {
+    margin: 13px auto 24px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2142;
+  }
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
+.grid1 { grid-area: 1 / 2 / 2 / 3; }
+.grid2 { grid-area: 2 / 2 / 3 / 3; }
+.grid3 { grid-area: 3 / 2 / 4 / 3; }
+.grid4 { grid-area: 4 / 2 / 5 / 3; }
+.grid5 { grid-area: 5 / 1 / 6 / 2; }
+.grid6 { grid-area: 5 / 2 / 6 / 3; }
 .features-list__item {
   position: relative;
   padding-left: 39px;
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    margin-bottom: 41px;
+  }
   &::before {
     position: absolute;
     content: '';
@@ -37,5 +66,15 @@
     width: 28px;
     height: 28px;
     background: url(/src/images/feauters-nft.png) no-repeat center/contain;
+  }
+  // &:nth-child(-n + 4) {
+  //   @media (min-width: 768px) and (max-width: 1199.98px) {
+  //     grid-column: span 2;
+  //   }
+  // }
+  &-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
