@@ -1,33 +1,41 @@
 .features {
-    display: flex;
-    justify-content: center;
+  background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+}
+.features-list__item {
+  list-style: none;
+}
+.section__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000000;
+  text-align: center;
+  margin: 40px auto;
+}
+.section__p {
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.features-list {
+  margin: 40px auto;
+  &__p{
+    margin: 13px auto 24px;
+    width: 100%;
   }
-  .features-list__item {
-    list-style: none;
+}
+.features-list__item {
+  position: relative;
+  padding-left: 39px;
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: url(/src/images/feauters-nft.png) no-repeat center/contain;
   }
-  .section__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #000000;
-    display: flex;
-    justify-content: center;
-  }
-  .section__p {
-    text-align: center;
-  }
-  .features-list__item{
-      position: relative;
-      padding-left:39px;
-  &::before{
-      position: absolute;
-      content: "";
-      left: 0;
-      top: 0;
-      width: 28px;
-      height: 28px;
-      background: url(/src/images/feauters-nft.png) no-repeat center/contain;
-  }
-  }
+}
