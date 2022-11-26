@@ -1,0 +1,33 @@
+.features {
+    display: flex;
+    justify-content: center;
+  }
+  .features-list__item {
+    list-style: none;
+  }
+  .section__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+  }
+  .section__p {
+    text-align: center;
+  }
+  .features-list__item{
+      position: relative;
+      padding-left:39px;
+  &::before{
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 28px;
+      height: 28px;
+      background: url(/src/images/feauters-nft.png) no-repeat center/contain;
+  }
+  }
