@@ -35,12 +35,20 @@ p {
   padding: 40px 0;
 }
 
+.testimonials__slider {
+  padding: 40px 0 46px;
+}
+
+.testimonials__title {
+  text-align: center;
+}
+
 .swiper-wrapper {
   text-decoration: none;
 }
 
-.testimonials__slider {
-  padding: 40px 0 46px;
+.testimonials__item {
+  text-align: center;
 }
 
 .testimonials__image {
@@ -100,6 +108,7 @@ p {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     max-width: 280px;
+    padding: 0;
   }
 }
 
@@ -108,14 +117,11 @@ p {
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .container {
     max-width: 704px;
+    padding: 0;
   }
 
   .testimonials {
     padding: 80px 0;
-  }
-
-  .swiper-wrapper {
-    text-decoration: none;
   }
 
   .testimonials__name {
@@ -132,7 +138,6 @@ p {
   }
 
   .testimonials__desk {
-    max-width: 704px;
     margin: 0 auto;
     font-weight: 500;
     font-size: 16px;
@@ -144,22 +149,6 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-  }
-
-  .testimonials__pagination .swiper-pagination {
-    bottom: 0;
-  }
-
-  .testimonials__pagination .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-    background-color: rgba(147, 158, 172, 1);
-  }
-
-  .testimonials__pagination
-    .swiper-pagination-bullet
-    .swiper-pagination-bullet-active {
-    background-color: rgba(6, 7, 27, 1);
   }
 }
 
@@ -168,35 +157,11 @@ p {
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 886px;
+    padding: 0;
   }
 
   .testimonials {
     padding: 80px 0;
-  }
-
-  .testimonials__title {
-    text-align: center;
-  }
-
-  .testimonials__slider {
-    padding: 40px 0 46px;
-  }
-
-  .swiper-wrapper {
-    text-decoration: none;
-  }
-
-  .testimonials__item {
-    text-align: center;
-  }
-
-  .testimonials__image {
-    margin: 0 auto 20px;
-    border-radius: 50%;
-    width: 181px;
-    height: 181px;
-    object-fit: cover;
-    object-position: center;
   }
 
   .testimonials__name {
@@ -224,21 +189,5 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-  }
-
-  .testimonials__pagination .swiper-pagination {
-    bottom: 0;
-  }
-
-  .testimonials__pagination .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-    background-color: rgba(147, 158, 172, 1);
-  }
-
-  .testimonials__pagination
-    .swiper-pagination-bullet
-    .swiper-pagination-bullet-active {
-    background-color: rgba(6, 7, 27, 1);
   }
 }
