@@ -1,0 +1,61 @@
+.video {
+  background-image: url(../images/video-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (max-width: 767px),
+    (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(../images/video-mobile@2x.jpg);
+  }
+
+  @media screen and (max-width: 1279px) {
+    background-image: url(../images/video-tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2) and (max-width: 1279px),
+    (min-resolution: 192dpi) and (max-width: 1279px),
+    (min-resolution: 2dppx) and (max-width: 1279px) {
+    background-image: url(../images/video-tablet@2x.jpg);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/video-desctop.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
+    (min-resolution: 192dpi) and (min-width: 1280px),
+    (min-resolution: 2dppx) and (min-width: 1280px) {
+    background-image: url(../images/video-desctop@2x.jpg);
+  }
+
+  img {
+    margin-top: 40px;
+  }
+}
+
+.mobile-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 24px;
+
+  &__item {
+    background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
