@@ -1,4 +1,5 @@
 .team {
+  text-align: center;
   background-image: url(../images/team-bgc-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,11 +31,37 @@
     background-image: url(../images/team-bgc-desctop.jpg);
   }
 
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #000000;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+      line-height: 1.208;
+    }
+  }
+
   &__desc {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.714;
     margin-top: 24px;
+    text-align: center;
+    color: #000000;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 40px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-top: 80px;
+      padding-left: 196px;
+      padding-right: 198px;
+    }
   }
 
   &__list {
@@ -46,6 +73,16 @@
     margin-top: 24px;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      gap: 32px;
+      margin-top: 40px;
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 80px;
+    }
   }
 
   &__item {
@@ -57,10 +94,19 @@
       #06071b;
     border-radius: 15px;
     padding: 16px 16px 12px;
+
+    @media screen and (min-width: 769px) {
+      flex-basis: calc((100% - 96px) / 2);
+    }
+
+    @media screen and (min-width: 1280px) {
+      flex-basis: calc((100% - 96px) / 4);
+    }
   }
 
   img {
     border-radius: 10px;
+    margin: 0 auto;
   }
 
   &__name {
