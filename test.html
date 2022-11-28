@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link
+    <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.styles.css"
-    /> -->
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./test.css" />
     <title>Document</title>
   </head>
 
   <body>
-    <section class="testimonials testimonials-slider" id="testimonials">
+    <section
+      class="testimonials testimonials-slider"
+      id="testimonials"
+      data-slider="team-slider"
+    >
       <div class="container">
         <h2 class="section-title testimonials__title">
           WHAT OUR COSTUMER’S SAY
@@ -41,9 +45,11 @@
                 </p>
               </div>
             </li>
-            <!-- <li class="swiper-slide testimonials__item">
+
+            <li class="swiper-slide testimonials__item">
               <img
-                src="./images/swiper1x-mobile.jpg"
+                src="./src/images/swiper1x-mobile.jpg"
+                srcset="./src/images/swiper2x-mobile.jpg 2x"
                 alt="One of COSTUMER"
                 class="testimonials__image"
               />
@@ -63,7 +69,8 @@
             </li>
             <li class="swiper-slide testimonials__item">
               <img
-                src="./images/swiper1x-mobile.jpg"
+                src="./src/images/swiper1x-mobile.jpg"
+                srcset="./src/images/swiper2x-mobile.jpg 2x"
                 alt="One of COSTUMER"
                 class="testimonials__image"
               />
@@ -83,7 +90,8 @@
             </li>
             <li class="swiper-slide testimonials__item">
               <img
-                src="./images/swiper1x-mobile.jpg"
+                src="./src/images/swiper1x-mobile.jpg"
+                srcset="./src/images/swiper2x-mobile.jpg 2x"
                 alt="One of COSTUMER"
                 class="testimonials__image"
               />
@@ -103,7 +111,8 @@
             </li>
             <li class="swiper-slide testimonials__item">
               <img
-                src="./images/swiper1x-mobile.jpg"
+                src="./src/images/swiper1x-mobile.jpg"
+                srcset="./src/images/swiper2x-mobile.jpg 2x"
                 alt="One of COSTUMER"
                 class="testimonials__image"
               />
@@ -123,7 +132,8 @@
             </li>
             <li class="swiper-slide testimonials__item">
               <img
-                src="./images/swiper1x-mobile.jpg"
+                src="./src/images/swiper1x-mobile.jpg"
+                srcset="./src/images/swiper2x-mobile.jpg 2x"
                 alt="One of COSTUMER"
                 class="testimonials__image"
               />
@@ -140,14 +150,16 @@
                   pulvinar, id
                 </p>
               </div>
-            </li> -->
+            </li>
           </ul>
-          <!-- <ul class="swiper-pagination testimonials__pagination"></ul> -->
+
+          <ul class="swiper-pagination testimonials__pagination"></ul>
         </div>
       </div>
     </section>
-    <!-- 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
     <script src="./src/index.js"></script>
   </body>
 </html>

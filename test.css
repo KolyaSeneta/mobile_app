@@ -92,21 +92,21 @@ p {
   line-height: 1.71;
 }
 
-/* .testimonials__pagination .swiper-pagination {
+/* Paginations */
+
+.testimonials__pagination .swiper-pagination {
   bottom: 0;
 }
 
 .testimonials__pagination .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
-  background-color: rgba(147, 158, 172, 1);
+  /* background-color: rgba(147, 158, 172, 1); */
 }
 
-.testimonials__pagination
-  .swiper-pagination-bullet
-  .swiper-pagination-bullet-active {
+.testimonials__pagination .swiper-pagination-bullet-active {
   background-color: rgba(6, 7, 27, 1);
-} */
+}
 
 /* mobil */
 
