@@ -1,4 +1,35 @@
 .container {
+
+  max-width: 1280px;
+  width: 100%;
+  margin: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+=======
     margin: 0 auto;
     text-align: center;
     padding: 0 16px;
@@ -51,4 +82,5 @@
         // .header-container {
         //     max-width: 767px;
         // }
+
 }
