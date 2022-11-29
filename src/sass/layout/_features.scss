@@ -1,0 +1,182 @@
+.features {
+  background-color: #fff;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @media screen and (max-width: 767px) {
+    background-image: url(/src/images/bg-features-mobile.png);
+  }
+  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (max-width: 767px),
+    (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(/src/images/bg-features-mobile@2x.png);
+  }
+  @media (min-width: 1200px) {
+    background-image: url(/src/images/bg-features-desk.png);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (min-resolution: 192dpi) and (min-width: 1200px),
+    (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(/src/images/bg-features-desk@2x.png);
+  }
+}
+.features-list__item {
+  list-style: none;
+}
+.section__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000000;
+  text-align: center;
+  margin: 40px auto;
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    font-size: 24px;
+    line-height: 1.2083;
+  }
+  @media (min-width: 1200px) {
+    font-size: 24px;
+    line-height: 1.2083;
+    margin: 40px auto 80px;
+  }
+}
+.section__p {
+  text-align: center;
+  margin-bottom: 23px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7142;
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  @media (min-width: 1200px) {
+    width: 886px;
+    margin: 0 auto 141px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+.features__picture {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    transform: translateY(32px) translateX(-40px);
+    position: absolute;
+  }
+  @media (min-width: 1200px) {
+    position: absolute;
+    right: 0;
+    left: 54px;
+    top: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+}
+.features-list {
+  margin: 21px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__p {
+    margin: 13px auto 24px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2142;
+  }
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+  }
+  @media (min-width: 1200px) {
+    grid-column-gap: 312px;
+    grid-row-gap: 80px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    margin-left: 150px;
+  }
+}
+.grid1 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.grid2 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.grid3 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+.grid4 {
+  grid-area: 4 / 3 / 5 / 4;
+}
+.grid5 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+.grid6 {
+  grid-area: 5 / 3 / 6 / 4;
+}
+.features-list__item {
+  position: relative;
+  padding-left: 39px;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-bottom: 41px;
+    min-width: 278px;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: url(/src/images/feauters-nft.png) no-repeat center/contain;
+  }
+  // &:nth-child(-n + 4) {
+  //   @media (min-width: 768px) and (max-width: 1199.98px) {
+  //     grid-column: span 2;
+  //   }
+  // }
+  &-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  &-text {
+    @media screen and (min-width: 1200px) {
+      width: 220px;
+      display: flex;
+      flex-basis: 50%;
+      flex-direction: column;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .grid1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .grid2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .grid3 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .grid4 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .grid5 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .grid6 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+}
