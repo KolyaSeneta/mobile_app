@@ -13,7 +13,12 @@
     background-image: url(/src/images/bg-features-mobile@2x.png);
   }
   @media (min-width: 1200px) {
-    height: 920px;
+    background-image: url(/src/images/bg-features-desk.png);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (min-resolution: 192dpi) and (min-width: 1200px),
+    (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: url(/src/images/bg-features-desk@2x.png);
   }
 }
 .features-list__item {
@@ -59,13 +64,13 @@
   justify-content: center;
   margin: 0 20px;
   @media (min-width: 768px) and (max-width: 1199.98px) {
-    transform: translateY(32px) translateX(-36px);
+    transform: translateY(32px) translateX(-40px);
     position: absolute;
   }
   @media (min-width: 1200px) {
     position: absolute;
     right: 0;
-    left: 0;
+    left: 54px;
     top: 280px;
     margin-left: auto;
     margin-right: auto;
