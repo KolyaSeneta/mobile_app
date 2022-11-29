@@ -35,7 +35,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
-    color: #000000;
+    color: var(--primary-text-color);
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -50,7 +50,7 @@
     line-height: 1.714;
     margin-top: 24px;
     text-align: center;
-    color: #000000;
+    color: var(--primary-text-color);
 
     @media screen and (min-width: 768px) {
       margin-top: 40px;
@@ -65,7 +65,7 @@
   }
 
   &__list {
-    color: #fff;
+    color: var(--secondary-text-color);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
