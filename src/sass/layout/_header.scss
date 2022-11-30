@@ -3,7 +3,7 @@
   width: 100%;
 }
 @media screen and (max-width: 480px) {
-  .container {
+  .header-container {
     min-width: 100%;
     padding-left: 20px;
     padding-right: 20px;
@@ -17,6 +17,11 @@
 
   .header {
     margin-top: 20px;
+    background: #06071b,
+        linear-gradient(90.03deg,
+          rgba(0, 197, 235, 0.3) -1.97%,
+          rgba(181, 68, 254, 0.3) 89.43%);
+      backdrop-filter: blur(17.5px);
   }
 
   .header_link {
@@ -53,7 +58,7 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
+  .header-container {
     width: 480px;
     padding-left: 20px;
     padding-right: 20px;
@@ -109,7 +114,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1278px) {
-  .container {
+  .header-container {
     width: 768px;
   }
   .header_logo {
@@ -147,7 +152,7 @@
 }
 
 @media screen and (min-width: 1279px) {
-  .container {
+  .header-container{
     margin: 0 auto;
     // text-align: center;
     min-width: 1280px;
