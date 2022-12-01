@@ -37,10 +37,18 @@
     line-height: 1.2;
     color: var(--primary-text-color);
     text-align: center;
+    padding-top: 40px;
+    margin-bottom: 40px;
 
     @media screen and (min-width: 768px) {
       font-size: 24px;
       line-height: 1.208;
+      padding-top: 80px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding-top: 80px;
+      margin-bottom: 80px;
     }
   }
 
