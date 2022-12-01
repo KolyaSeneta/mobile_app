@@ -66,7 +66,8 @@
 }
 .nav-mobile__item{   
     margin-bottom: 16px; 
-    height: 59px;    
+    height: 59px;   
+    color: rgba(255, 255, 255, 1);           
 }
 .nav-mobile__item--about{ 
     margin-top: -59px;                           
@@ -88,7 +89,7 @@
         background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
         background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);   
+        -webkit-text-fill-color: transparent;   
     }   
 } 
 
