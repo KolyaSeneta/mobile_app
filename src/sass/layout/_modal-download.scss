@@ -119,10 +119,11 @@
     top: 50%; 
     left: 50%; 
     transform: translate(-50%,-50%);   
-    padding: 8px; 
+    
     @media screen and (max-width:767px){ 
         width: 280px; 
-        max-height: 1639px;        
+        max-height: 890px;   
+           
     } 
     @media screen and (min-width:768px){ 
         width: 568px; 
@@ -176,14 +177,20 @@
     height: 390px;    
     display: block;
     margin-bottom: 20px;
+    &:hover,
+    &:focus{
+            background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+    }
     @media screen and (min-width:768px) {         
         margin-bottom: 32px;
     }   
-    padding: 2px;      
+         
     color: rgba(255, 255, 255, 1); 
     text-align: center;  
-    background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
-    border-radius: 6px;  
+        border: 2px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to right, #00c5eb, #b544fe);
+        border-radius: 6px;
     //border: 2px solid transparent;      
     //border-image: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%) 1 round round;
     //border-radius: 6px;     
@@ -191,11 +198,8 @@
 .form-order__background{
     padding-top: 28px;  
     height: 362px;  
-    background: rgba(7, 8, 28, 1); 
     border: none;  
-    &:hover{
-        background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
-    }     
+        
 }
  
 .form-order__text{
@@ -276,7 +280,7 @@
 
     margin-bottom: 20px;
     width: 232px;
-    height: 472px;
+    height: 476px;
     list-style-type: none;
     background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);      
     border-radius: 6px;
