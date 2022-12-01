@@ -92,7 +92,8 @@
     }   
 } 
 
-.nav-mobile__link--about{     
+.nav-mobile__link--about{   
+    opacity: 0;  
     color:  rgba(0, 0, 0, 1);
     font-family: Montserrat;
     font-size: 32px; 
@@ -104,7 +105,7 @@
 
 .nav-mobile__link--current{  
     margin-bottom: 12px; 
-    background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    //background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;   
