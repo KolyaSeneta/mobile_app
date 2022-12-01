@@ -25,6 +25,7 @@
     right: 20px;
     width: 24px;
     height: 24px; 
+    cursor: pointer;
     @media screen and (min-width:768px){
         width: 28px;
         height: 28px;        
@@ -55,6 +56,7 @@
     letter-spacing: 0em;
     text-align: center;
     color: #fff;
+    cursor: pointer;
 
     background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
     border-radius: 5px;
